@@ -1,0 +1,189 @@
+:root {
+    --field-green: #006400;
+    --bright-green: #198754;
+    --ink: #171717;
+    --paper: #ffffff;
+}
+
+body {
+    background-color: var(--paper);
+    color: var(--ink);
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.class-nav {
+    background: var(--field-green);
+    border-bottom: 2px solid #111;
+}
+
+.class-nav .navbar-brand {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.class-nav .nav-link {
+    color: #fff;
+    font-size: 1rem;
+}
+
+.class-nav .nav-link:hover,
+.class-nav .nav-link.active {
+    color: #e5f3d9;
+    text-decoration: underline;
+}
+
+.page-wrap {
+    max-width: 960px;
+    min-height: calc(100vh - 120px);
+    padding-top: 1.5rem;
+    padding-bottom: 2rem;
+}
+
+.welcome-board {
+    background: #f1f5ed;
+    border: 2px solid var(--ink);
+    color: var(--ink);
+    margin: 0.5rem 0 2rem;
+    padding: 1.2rem;
+}
+
+.draft-label {
+    color: var(--field-green);
+    font-size: 0.9rem;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+h1, h2, h3 {
+    color: var(--field-green);
+    font-weight: bold;
+}
+
+.welcome-board h1 {
+    color: var(--field-green);
+    font-size: 2.3rem;
+    max-width: 700px;
+}
+
+.welcome-copy {
+    font-size: 1.1rem;
+    max-width: 720px;
+}
+
+.small-note {
+    font-size: 0.95rem;
+    margin-top: 1rem;
+}
+
+.content-section {
+    margin: 1.8rem 0;
+}
+
+.content-section h2,
+.page-heading {
+    border-bottom: 1px solid var(--field-green);
+    margin-bottom: 0.8rem;
+    padding-bottom: 0.25rem;
+}
+
+.rough-panel {
+    background: transparent;
+    border: 0;
+    border-left: 2px solid var(--field-green);
+    height: 100%;
+    padding: 0.5rem 0.8rem;
+}
+
+.rough-panel h3 {
+    font-size: 1.2rem;
+    margin-top: 0.25rem;
+}
+
+.number-mark {
+    color: var(--bright-green);
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.quick-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.btn {
+    border-radius: 0;
+    font-weight: bold;
+    white-space: normal;
+}
+
+.tip-strip {
+    background: #eef4e8;
+    border-left: 3px solid var(--field-green);
+    margin-top: 1.5rem;
+    padding: 0.75rem;
+}
+
+.page-intro {
+    font-size: 1.1rem;
+    max-width: 780px;
+}
+
+.list-checks li {
+    margin-bottom: 0.4rem;
+}
+
+.draft-box {
+    background: #fafaf4;
+    border: 1px dashed #555;
+    margin: 1rem 0;
+    padding: 0.8rem;
+}
+
+.schedule-table th {
+    background: #e7eee2;
+    color: var(--ink);
+}
+
+.accordion-button {
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 0 !important;
+}
+
+.accordion-button:not(.collapsed) {
+    background: #eef4e8;
+    color: var(--field-green);
+}
+
+.accordion-item,
+.accordion-button,
+.accordion-body {
+    border-radius: 0 !important;
+}
+
+.missing-note {
+    background: #fffde8;
+    border-left: 3px dashed #777;
+    margin: 1.2rem 0;
+    padding: 0.65rem 0.8rem;
+}
+
+.site-footer {
+    background: #111;
+    color: #fff;
+    padding: 0.7rem;
+    text-align: center;
+}
+
+@media (max-width: 575.98px) {
+    .page-wrap {
+        padding-top: 1rem;
+    }
+
+    .quick-links .btn {
+        width: 100%;
+    }
+}
