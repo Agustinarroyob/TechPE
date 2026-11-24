@@ -1,20 +1,13 @@
-:root {
-    --field-green: #006400;
-    --bright-green: #198754;
-    --ink: #171717;
-    --paper: #ffffff;
-}
-
 body {
-    background-color: var(--paper);
-    color: var(--ink);
+    background-color: #ffffff;
+    color: #171717;
     font-family: Arial, sans-serif;
     font-size: 18px;
     line-height: 1.5;
 }
 
 .class-nav {
-    background: var(--field-green);
+    background: #006400;
     border-bottom: 2px solid #111;
 }
 
@@ -43,26 +36,26 @@ body {
 
 .welcome-board {
     background: #f1f5ed;
-    border: 2px solid var(--ink);
-    color: var(--ink);
+    border: 2px solid #171717;
+    color: #171717;
     margin: 0.5rem 0 2rem;
     padding: 1.2rem;
 }
 
 .draft-label {
-    color: var(--field-green);
+    color: #006400;
     font-size: 0.9rem;
     font-weight: bold;
     text-decoration: underline;
 }
 
 h1, h2, h3 {
-    color: var(--field-green);
+    color: #006400;
     font-weight: bold;
 }
 
 .welcome-board h1 {
-    color: var(--field-green);
+    color: #006400;
     font-size: 2.3rem;
     max-width: 700px;
 }
@@ -70,6 +63,30 @@ h1, h2, h3 {
 .welcome-copy {
     font-size: 1.1rem;
     max-width: 720px;
+}
+
+.home-photo,
+.page-photo {
+    display: block;
+    height: auto;
+    margin: 1rem 0 1.5rem;
+    max-width: 100%;
+}
+
+.home-photo {
+    max-height: 430px;
+    object-fit: contain;
+    object-position: left center;
+}
+
+.page-photo {
+    max-height: 360px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.skills-photo {
+    max-height: 300px;
 }
 
 .small-note {
@@ -83,7 +100,7 @@ h1, h2, h3 {
 
 .content-section h2,
 .page-heading {
-    border-bottom: 1px solid var(--field-green);
+    border-bottom: 1px solid #006400;
     margin-bottom: 0.8rem;
     padding-bottom: 0.25rem;
 }
@@ -91,7 +108,7 @@ h1, h2, h3 {
 .rough-panel {
     background: transparent;
     border: 0;
-    border-left: 2px solid var(--field-green);
+    border-left: 2px solid #006400;
     height: 100%;
     padding: 0.5rem 0.8rem;
 }
@@ -99,12 +116,6 @@ h1, h2, h3 {
 .rough-panel h3 {
     font-size: 1.2rem;
     margin-top: 0.25rem;
-}
-
-.number-mark {
-    color: var(--bright-green);
-    font-size: 1.2rem;
-    font-weight: bold;
 }
 
 .quick-links {
@@ -121,7 +132,7 @@ h1, h2, h3 {
 
 .tip-strip {
     background: #eef4e8;
-    border-left: 3px solid var(--field-green);
+    border-left: 3px solid #006400;
     margin-top: 1.5rem;
     padding: 0.75rem;
 }
@@ -135,47 +146,15 @@ h1, h2, h3 {
     margin-bottom: 0.4rem;
 }
 
-.draft-box {
-    background: #fafaf4;
-    border: 1px dashed #555;
-    margin: 1rem 0;
-    padding: 0.8rem;
-}
-
-.schedule-table th {
-    background: #e7eee2;
-    color: var(--ink);
-}
-
-.accordion-button {
-    font-size: 1rem;
-    font-weight: bold;
-    border-radius: 0 !important;
-}
-
-.accordion-button:not(.collapsed) {
-    background: #eef4e8;
-    color: var(--field-green);
-}
-
-.accordion-item,
-.accordion-button,
-.accordion-body {
-    border-radius: 0 !important;
-}
-
-.missing-note {
-    background: #fffde8;
-    border-left: 3px dashed #777;
-    margin: 1.2rem 0;
-    padding: 0.65rem 0.8rem;
-}
-
 .site-footer {
     background: #111;
     color: #fff;
     padding: 0.7rem;
     text-align: center;
+}
+
+.site-footer a {
+    color: #ffffff;
 }
 
 @media (max-width: 575.98px) {
@@ -185,5 +164,11 @@ h1, h2, h3 {
 
     .quick-links .btn {
         width: 100%;
+    }
+
+    .home-photo,
+    .page-photo {
+        max-height: 260px;
+        object-fit: contain;
     }
 }
